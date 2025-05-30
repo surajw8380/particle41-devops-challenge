@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def home():
-    timestamp = datetime.utcnow().isoformat() + "Z"
+    timestamp = datetime.now().isoformat() 
     ip_address = request.remote_addr
     return jsonify({
         "timestamp": timestamp,
