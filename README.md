@@ -124,7 +124,6 @@ export AWS_SECRET_ACCESS_KEY=your-secret-key
 export AWS_DEFAULT_REGION=ap-south-1
 ```
 
-> ✅ **Important:** Do NOT hardcode credentials in any files. Ensure `.gitignore` excludes any temporary local configuration files.
 
 ---
 
