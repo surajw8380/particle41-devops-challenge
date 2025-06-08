@@ -113,14 +113,14 @@ AWS Secret Access Key
 
 Default region (e.g., ap-south-1)
 
-Option 2: Environment Variables
+### Option 2: Environment Variables
 export AWS_ACCESS_KEY_ID=your-access-key
 export AWS_SECRET_ACCESS_KEY=your-secret-key
 export AWS_DEFAULT_REGION=ap-south-1
 
 
 ---
-
+---
 ## 🚀 Setup Instructions
 
 ### 1. Clone the Repository
