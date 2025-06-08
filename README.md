@@ -14,11 +14,12 @@ The service returns the current timestamp and the client's IP address via a simp
 * [Architecture](#architecture)
 * [Directory Structure](#directory-structure)
 * [Prerequisites](#prerequisites)
+* [AWS Credentials Configuration](#aws-credentials-configuration)
 * [Setup Instructions](#setup-instructions)
 * [Infrastructure Overview](#infrastructure-overview)
 * [Application Overview](#application-overview)
 * [IAM Policy](#iam-policy)
-* [Destroying the Infrastructure](#destroying-the-infrastructure)
+* [Teardown Instructions](#teardown-instructions)
 * [Notes](#notes)
 
 ---
@@ -97,30 +98,36 @@ Ensure the following tools are installed:
 | AWS CLI   | >= 2.0   | [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) |
 | Python    | >= 3.11  | [Install Python](https://www.python.org/downloads/)                                    |
 
+---
+
 ## 🔐 AWS Credentials Configuration
 
-Make sure your AWS credentials are configured either via:
+Make sure your AWS credentials are configured via **either** of the following methods:
 
 ### Option 1: AWS CLI Configuration
 
 ```bash
 aws configure
-Set:
+```
 
-AWS Access Key ID
+Set the following when prompted:
 
-AWS Secret Access Key
-
-Default region (e.g., ap-south-1)
+* AWS Access Key ID
+* AWS Secret Access Key
+* Default region (e.g., `ap-south-1`)
 
 ### Option 2: Environment Variables
+
+```bash
 export AWS_ACCESS_KEY_ID=your-access-key
 export AWS_SECRET_ACCESS_KEY=your-secret-key
 export AWS_DEFAULT_REGION=ap-south-1
+```
 
+> ✅ **Important:** Do NOT hardcode credentials in any files. Ensure `.gitignore` excludes any temporary local configuration files.
 
 ---
----
+
 ## 🚀 Setup Instructions
 
 ### 1. Clone the Repository
@@ -246,10 +253,6 @@ You can use the below IAM policies to provision resources.
 
 </details>
 
-
-
-</details>
-
 ---
 
 ## 🧹 Teardown Instructions
@@ -279,11 +282,8 @@ terraform destroy
 
 ---
 
-
----
-
 > **Author:** Suraj Waghamare
-> **Email** surajnm.waghmare@gmail.com
+> **Email** [surajnm.waghmare@gmail.com](mailto:surajnm.waghmare@gmail.com)
 
 ---
 
