@@ -97,13 +97,27 @@ Ensure the following tools are installed:
 | AWS CLI   | >= 2.0   | [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) |
 | Python    | >= 3.11  | [Install Python](https://www.python.org/downloads/)                                    |
 
-**AWS Credentials Setup:**
+## 🔐 AWS Credentials Configuration
+
+Make sure your AWS credentials are configured either via:
+
+### Option 1: AWS CLI Configuration
 
 ```bash
 aws configure
-```
+Set:
 
-Make sure the user has the necessary IAM permissions mentioned below.
+AWS Access Key ID
+
+AWS Secret Access Key
+
+Default region (e.g., ap-south-1)
+
+Option 2: Environment Variables
+export AWS_ACCESS_KEY_ID=your-access-key
+export AWS_SECRET_ACCESS_KEY=your-secret-key
+export AWS_DEFAULT_REGION=ap-south-1
+
 
 ---
 
