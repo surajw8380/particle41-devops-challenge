@@ -1,4 +1,4 @@
-# Terraform Deployment Guide
+## Terraform Deployment Guide ##
 
 This directory (`/terraform`) contains all the infrastructure-as-code (IaC) configurations used to deploy the **SimpleTimeService** containerized application on AWS using ECS Fargate, an Application Load Balancer, and supporting cloud resources. It also includes a remote backend setup for managing Terraform state files securely.
 
