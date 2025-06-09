@@ -18,8 +18,8 @@ This Flask app exposes a simple `/` endpoint that responds with:
 
 ```json
 {
-  "timestamp": "2025-06-08T12:34:56",
-  "ip": "CLIENT_IP_ADDRESS"
+  "timestamp": "<current date and time>",
+  "ip": "<the IP address of the visitor>"
 }
 ```
 
