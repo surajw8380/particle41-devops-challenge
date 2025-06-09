@@ -167,8 +167,8 @@ Visit the URL in your browser. You should see:
 
 ```json
 {
-  "timestamp": "2025-06-08T10:35:20.123456",
-  "ip": "123.45.67.89"
+  "timestamp": "<current date and time>",
+  "ip": "<the IP address of the visitor>"
 }
 ```
 
