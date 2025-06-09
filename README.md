@@ -156,7 +156,7 @@ terraform apply
 
 ### 4. Access the Application
 
-Once deployed, Terraform will output the public ALB URL:
+Once deployed, Terraform will output the public ALB URL, wait for 1-2 minutes:
 
 ```bash
 Outputs:
